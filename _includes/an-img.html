@@ -1,16 +1,16 @@
 <div class="col">
   <figure class="figure">
     <img src="{{ include.src }}" class="figure-img m-0" />
-    <figcaption class="figure-caption row" style="margin-top: -0.8rem;">
+    <figcaption class="figure-caption" style="margin-top: -0.8rem;">
       {% if include.href %}
-      <a href="{{ include.href }}" class="col small" target="_blank">
+      <a href="{{ include.href }}" class="small" target="_blank">
         {{ include.ref_text }}
       </a>
       {% else %} 
         <span class="col small">{{ include.cap }}</span> 
       {%endif%}
       {% if include.mj %}
-      <a href="{{ include.mj }}" class="col small btn btn-secondary" target="_blank">
+      <a href="{{ include.mj }}" class="small btn btn-secondary" target="_blank">
         on Midjourney
       </a>
       {% endif %}
