@@ -4,11 +4,33 @@
     <figcaption class="figure-caption row" style="margin-top: -0.8rem;">
       {% if include.href %}
       <a href="{{ include.href }}" class="col small" target="_blank">
-        {{ include.cap }}
+        {{ include.ref_text }}
       </a>
       {% else %} 
         <span class="col small">{{ include.cap }}</span> 
       {%endif%}
+      {% if include.mj %}
+      <a href="{{ include.mj }}" class="col small btn btn-secondary" target="_blank">
+        on Midjourney
+      </a>
+      {% endif %}
+      {% if include.prommpt  %}
+      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offCanva{{include.id}}" role="button">
+        Link with href
+      </a>
+      {% endif %}
     </figcaption>
   </figure>
+  
+  {% if include.prommpt  %}
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offCanva{{include.id}}">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>{{include.prommpt}}</p>
+    </div>
+  </div>
+  {% endif %}
 </div>
