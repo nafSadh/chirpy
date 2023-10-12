@@ -14,7 +14,7 @@
         on Midjourney
       </a>
       {% endif %}
-      {% if include.prommpt  %}
+      {% if include.prompt  %}
       <a class="btn btn-outline-secondary btn-small" 
         data-bs-toggle="offcanvas" href="#offCanva{{include.id}}" role="button">
         prompt
@@ -23,14 +23,14 @@
     </figcaption>
   </figure>
   
-  {% if include.prommpt  %}
+  {% if include.prompt  %}
   <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offCanva{{include.id}}">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <p>{{include.prommpt}}</p>
+      <p>{{include.prompt}}</p>
     </div>
   </div>
   {% endif %}
