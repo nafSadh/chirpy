@@ -10,12 +10,13 @@
         <span class="col small">{{ include.cap }}</span> 
       {%endif%}
       {% if include.mj %}
-      <a href="{{ include.mj }}" class="small btn btn-secondary" target="_blank">
+      <a href="{{ include.mj }}" class="btn btn-outline-secondary btn-small" target="_blank">
         on Midjourney
       </a>
       {% endif %}
       {% if include.prommpt  %}
-      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offCanva{{include.id}}" role="button">
+      <a class="btn btn-outline-secondary btn-small" 
+        data-bs-toggle="offcanvas" href="#offCanva{{include.id}}" role="button">
         prompt
       </a>
       {% endif %}
