@@ -6,6 +6,10 @@ gem "jekyll-theme-chirpy", "~> 6.2", ">= 6.2.2"
 
 # gem "jekyll-theme-chirpy", git: 'https://github.com/nafsadh/jekyll-theme-chirpy'
 
+group :jekyll_plugins do
+  gem "premonition", "4.0.1"
+end
+
 group :test do
   gem "html-proofer", "~> 4.4"
 end
