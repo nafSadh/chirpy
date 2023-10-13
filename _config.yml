@@ -114,6 +114,9 @@ pwa:
 
 paginate: 10
 
+plugins:
+  - premonition
+  
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
